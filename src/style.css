@@ -134,6 +134,18 @@ html {
   .navbar-nav .nav-item a:hover::after {
     width: 100%;
   }
+
+  .navbar-banner {
+    position: relative;
+    /* background-image: var(--image-gradient), url(./Assets/bg1_32.jpg); */
+    /* background-image: linear-gradient(rgb(8,18,31), rgb(9,12,19)); */
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: wheat;
+    margin-top: 4rem;
+    /* padding-bottom: 5px !important;
+    padding-top: 30px !important; */
+  }
   
   /* --------- */
   /* Home section */
@@ -186,7 +198,7 @@ html {
   
   .home-section {
     position: relative;
-    z-index: -1;
+    z-index: 0;
     /* background-image: var(--image-gradient), url(./Assets/bg1_32.jpg); */
     /* background-image: linear-gradient(rgb(8,18,31), rgb(9,12,19)); */
     background-position: top center;
@@ -196,7 +208,7 @@ html {
   }
   
   .home-content {
-    padding: 9rem 0 2rem !important;
+    padding: 4rem 0 1rem !important;
     color: whitesmoke;
     text-align: left;
   }
@@ -212,17 +224,17 @@ html {
   }
   
   .main-name {
-    color: #819eec;
+    color: #040100;
   }
   
   .Typewriter__wrapper {
     font-size: 2.2em !important;
-    color: #819eec !important;
+    color: #040100 !important;
     font-weight: 600 !important;
   }
   .Typewriter__cursor {
     font-size: 2.4em !important;
-    color: #819eec !important;
+    color: #040100 !important;
   }
   
   @media (max-width: 767px) {
@@ -256,7 +268,7 @@ html {
   
   .home-about-description {
     color: white !important;
-    padding-top: 100px !important;
+    padding-top: 20px !important;
     padding-bottom: 20px !important;
     text-align: center;
   }
@@ -302,7 +314,7 @@ html {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #68187a;
+    background: #040100;
     transition: 0.5s;
     transform: scale(0.9);
     z-index: -1;
@@ -310,13 +322,13 @@ html {
   
   .home-social-icons:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #801f95;
+    box-shadow: 0 0 15px #2d2c2c;
   }
   
   .home-social-icons:hover {
-    color: #87209e;
-    box-shadow: 0 0 5px #87209e;
-    text-shadow: 0 0 2px #87209e;
+    color: #2d2c2c;
+    box-shadow: 0 0 5px #2d2c2c;
+    text-shadow: 0 0 2px #2d2c2c;
   }
   
   .social-icons {
@@ -326,7 +338,7 @@ html {
   }
   
   .icon-colour {
-    color: #700c86 !important;
+    color: #040100 !important;
   }
   
   /* --------- */
@@ -441,7 +453,16 @@ html {
   .publication-row {
     margin: 1.5rem;
   }
-  
+
+  .about-link {
+    text-decoration: none;
+    color:rgb(215, 168, 105);
+  }
+
+  .about-link:hover {
+    text-decoration: none;
+    color:rgb(218, 194, 163);
+  }
   
   
   

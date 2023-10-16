@@ -1,8 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../Assets/cyber_theme.jpg";
-// import Home2 from "./Home2";
-import Type from '../components/Type';
 
 function Publications() {
   return (
@@ -24,12 +21,13 @@ function Publications() {
           <Row className='publication-row'>
             <Col md="2"></Col>
             <Col md="8" className="publication-entry">
-            [C.7] <u>Jingyi Xie</u>, Rui Yu, Emanuel Mendiola-Ortiz, Kaiming Cui, Sooyeon Lee, John M. Carroll, and Syed M Billah. (2023). 
+            [C.7] <u>Jingyi Xie</u>, Rui Yu, Kaiming Cui, Sooyeon Lee, John M. Carroll, and Syed M Billah. (2023). 
             Are Two Heads Better than One? Investigating Remote Sighted Assistance with Paired Volunteers. 
             In Proceedings of the 2023 ACM Designing Interactive Systems Conference (DIS '23)
             </Col>
             <Col md="3"></Col>
           </Row>
+
           <Row className='publication-row'>
             <Col md="2"></Col>
             <Col md="8" className="publication-entry">
@@ -39,6 +37,7 @@ function Publications() {
             </Col>
             <Col md="3"></Col>
           </Row>
+
           <Row className='publication-row'>
             <Col md="2"></Col>
             <Col md="8" className="publication-entry">
@@ -48,6 +47,7 @@ function Publications() {
             </Col>
             <Col md="3"></Col>
           </Row>
+
           <Row className='publication-row'>
             <Col md="2"></Col>
             <Col md="8" className="publication-entry">
@@ -57,6 +57,7 @@ function Publications() {
             </Col>
             <Col md="3"></Col>
           </Row>
+
           <Row className='publication-row'>
             <Col md="2"></Col>
             <Col md="8" className="publication-entry">

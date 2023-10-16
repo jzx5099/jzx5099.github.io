@@ -12,7 +12,7 @@ import Home from './Pages/Home'
 import Publications from './Pages/Publications'
 import About from './Pages/About';
 import Footer from './components/Footer';
-import ScrollToTop from "./components/ScrollToTop";
+import Projects from './Pages/Projects';
 import NavBar from './components/NavBar';
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -35,11 +35,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="*" element={<Navigate to="/"/>} /> */}
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

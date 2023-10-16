@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
+import { Row, Col } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
@@ -7,6 +8,12 @@ import {
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
+import {
+  HiOutlineNewspaper
+} from "react-icons/hi"
+import {
+  FaProjectDiagram
+} from "react-icons/fa"
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -23,6 +30,7 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
+    <>
     <Navbar
       expanded={expand}
       fixed="top"
@@ -73,14 +81,33 @@ function NavBar() {
                 to="/publications"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Publications
+                <HiOutlineNewspaper style={{ marginBottom: "2px" }} /> Publications
               </Nav.Link>
             </Nav.Item>
+
+            {/* <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/projects"
+                onClick={() => updateExpanded(false)}
+              >
+                <FaProjectDiagram style={{ marginBottom: "2px" }} /> Projects
+              </Nav.Link>
+            </Nav.Item> */}
 
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
+    <Container fluid className="navbar-banner">
+    <Row>
+        <Col>
+        Open to Work!
+        </Col>
+      </Row>
+    </Container>
+    </>
   );
 }
 
