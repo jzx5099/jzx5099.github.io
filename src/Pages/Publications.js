@@ -86,6 +86,16 @@ function Publications() {
             <Col md="3"></Col>
           </Row>
           
+          <h1>Workshop Papers</h1>
+          <Row className='publication-row'>
+            <Col md="2"></Col>
+            <Col md="8" className="publication-entry">
+            [W.1] <u>Jingyi Xie</u>, Rui Yu, Sooyeon Lee, Syed M Billah, and John M. Carroll. (2023). 
+            Resilience in Remote Sighted Assistance. 
+            Workshop paper for the DIS 2023 workshop, "Designing for and Reflecting upon Resilience in Health and Wellbeing." (DIS '23)
+            </Col>
+            <Col md="3"></Col>
+          </Row>
           
         </Container>
       </Container>

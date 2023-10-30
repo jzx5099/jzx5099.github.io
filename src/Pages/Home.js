@@ -53,13 +53,8 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Container fluid className="home-about-section" id="about">
+      {/* <Container fluid className="home-about-section" id="about">
         <Container>
-          {/* <Row>
-            <Col className='home-about-description'>
-              <h1>Who am I?</h1>
-            </Col>
-          </Row> */}
           <Row>
             <Col md={12} className="home-about-social">
               <h1>Contact Me</h1>
@@ -98,7 +93,7 @@ function Home() {
             </Col>
           </Row>
         </Container>
-      </Container>
+      </Container> */}
     </>
   );
 }

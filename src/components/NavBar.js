@@ -78,6 +78,17 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/projects"
+                onClick={() => updateExpanded(false)}
+              >
+                <FaProjectDiagram style={{ marginBottom: "2px" }} /> Projects
+              </Nav.Link>
+            </Nav.Item>
+
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/publications"
                 onClick={() => updateExpanded(false)}
               >
@@ -85,16 +96,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/projects"
-                onClick={() => updateExpanded(false)}
-              >
-                <FaProjectDiagram style={{ marginBottom: "2px" }} /> Projects
-              </Nav.Link>
-            </Nav.Item> */}
-
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -103,7 +105,9 @@ function NavBar() {
     <Container fluid className="navbar-banner">
     <Row>
         <Col>
+        <p style={{marginBottom: "0px", fontSize: "2rem"}}>
         Open to Work!
+        </p>
         </Col>
       </Row>
     </Container>
